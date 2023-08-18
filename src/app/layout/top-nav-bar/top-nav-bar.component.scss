@@ -1,0 +1,98 @@
+/* Global styles for c-wrapper */
+.c-wrapper {
+    height: 55px;
+    background-color: var(--c-top-nav-bar-bg-color);
+    color: var(--c-top-nav-bar-font-color);
+}
+
+/* Style menu items */
+.c-wrapper .menu-item {
+    position: relative;
+}
+
+.c-wrapper .menu-item::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+}
+
+/* Main menu wrapper */
+.main-menu-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+/* Sub-menu wrapper */
+.sub-menu-wrapper {
+    max-width: calc(100vw - 20px - 20px);
+    max-height: unset;
+    position: absolute;
+    background-color: transparent;
+    top: 38px;
+    opacity: 0;
+    z-index: 998;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Show sub-menu when focus, hover, etc. */
+.sub-menu-wrapper:focus,
+.sub-menu-wrapper:focus-within,
+.sub-menu-wrapper:active,
+.sub-menu-wrapper:focus-visible,
+.sub-menu-wrapper:target,
+.main-menu-wrapper:hover .sub-menu-wrapper {
+    display: block;
+    opacity: 1;
+    z-index: 999;
+    pointer-events: auto;
+}
+
+/* Inner sub-menu wrapper */
+.sub-menu-inner-wrapper {
+    margin-top: 23px;
+    position: relative;
+    transform: translate3d(0, 30px, 0);
+    transition: transform 0.5s ease;
+}
+
+/* Show inner sub-menu when focus, hover, etc. */
+.sub-menu-wrapper:focus .sub-menu-inner-wrapper,
+.sub-menu-wrapper:focus-within .sub-menu-inner-wrapper,
+.sub-menu-wrapper:active .sub-menu-inner-wrapper,
+.sub-menu-wrapper:focus-visible .sub-menu-inner-wrapper,
+.sub-menu-wrapper:target .sub-menu-inner-wrapper,
+.main-menu-wrapper:hover .sub-menu-inner-wrapper {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+/* Sub-menu list styles */
+.sub-menu-list-wrapper {
+    background-color: var(--c-top-nav-bar-bg-color);
+    z-index: 2;
+
+    .separator {
+        border-right: 0.5px solid #ffffff54 !important;
+    }
+}
+
+.sub-menu-list {
+    max-width: 400px;
+}
+
+/* Arrow styles */
+.sub-menu-inner-wrapper .arrow {
+    position: absolute;
+    background-color: var(--c-top-nav-bar-bg-color);
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    top: -2.5px;
+    left: 50%;
+    transform: rotate(45deg);
+}

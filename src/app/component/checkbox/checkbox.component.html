@@ -1,0 +1,22 @@
+<div class="d-flex flex-row gap-2 align-items-center">
+  <div class="checkbox-wrapper-19">
+    <input
+      #input
+      type="checkbox"
+      [id]="id"
+      aria-labelledby="tmp"
+      class="d-none"
+      [name]="name"
+      [checked]="checked"
+    />
+    <div
+      #box
+      class="check-box"
+      [class.checked]="checked"
+      (click)="changeState()"
+    ></div>
+  </div>
+  <label class="ps-1 mb-0p5 cursor-pointer" id="tmp" (click)="changeState()">{{
+    label
+  }}</label>
+</div>

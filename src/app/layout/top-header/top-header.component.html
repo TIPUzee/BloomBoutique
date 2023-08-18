@@ -1,0 +1,37 @@
+<div class="c-wrapper w-100" [class.dark]="themeService.isDark()">
+  <div class="row m-0 px-3">
+    <div
+      class="col-3 d-flex fs-3 flex-row justify-content-start align-items-center gap-1 p-1"
+    >
+      <div
+        class="py-1 px-2 m-0 ratio-1x1 h-min d-flex justify-content-center align-items-center rounded-2 c-sm-shadow-hover"
+      >
+        <fa-icon [icon]="faBars"></fa-icon>
+      </div>
+      <div
+        class="py-1 px-2 m-0 ratio-1x1 h-min d-flex justify-content-center align-items-center rounded-2 c-sm-shadow-hover"
+      >
+        <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+      </div>
+    </div>
+    <div class="col-6 h-100">
+      <div class="logo h-100 w-100 py-2">
+        <app-logo-no-slogan></app-logo-no-slogan>
+      </div>
+    </div>
+    <div
+      class="col-3 d-flex fs-3 flex-row justify-content-end align-items-center p-1"
+    >
+      <div
+        class="py-1 px-2 m-0 ratio-1x1 h-min d-flex justify-content-center align-items-center rounded-2 c-sm-shadow-hover"
+      >
+        <fa-icon [icon]="faUser"></fa-icon>
+      </div>
+      <div
+        class="py-1 px-2 m-0 ratio-1x1 h-min d-flex justify-content-center align-items-center rounded-2 c-sm-shadow-hover"
+      >
+        <fa-icon [icon]="faCartShopping"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>

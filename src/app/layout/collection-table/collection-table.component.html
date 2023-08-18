@@ -1,0 +1,136 @@
+<div
+  class="hero-passage-wrapper d-flex flex-row w-100 gap-2 c-base rounded-3 py-3 px-3"
+>
+  <div
+    class="view-as d-flex flex-row justify-content-between align-items-center gap-3"
+  >
+    <div class="text-uppercase">view as</div>
+    <app-collection-table-layout-selector
+      [defaultLayout]="['columns', 4]"
+      (onChange)="onLayoutChange($event)"
+    ></app-collection-table-layout-selector>
+  </div>
+  <div class="separator flex-grow-1"></div>
+  <div class="items-per-page d-flex flex-row justify-content-between gap-3">
+    <div class="text-uppercase">Items per page</div>
+    <app-squared-dropdown
+      label="N/A"
+      [options]="[
+        ['15', true],
+        ['25', true],
+        ['50', true]
+      ]"
+      [default_option_index]="1"
+      [btn_classes]="'c-base-color txt-light'"
+      [options_list_classes]="'c-base txt-light c-base-outline rounded'"
+    ></app-squared-dropdown>
+  </div>
+  <div class="items-per-page d-flex flex-row justify-content-between gap-3">
+    <div class="text-uppercase">Sort by</div>
+    <app-squared-dropdown
+      label="N/A"
+      [options]="[
+        ['Best Selling', true],
+        ['New to old', true],
+        ['Old to new', true],
+        ['A - Z', true],
+        ['Z - A', true],
+        ['Price, low to high', true],
+        ['Price, high to low', true],
+        ['Featured', true]
+      ]"
+      [default_option_index]="1"
+      [btn_classes]="'c-base-color txt-light'"
+      [options_list_classes]="'c-base txt-light c-base-outline rounded'"
+      (onChange)="onChangeSortBy($event)"
+    ></app-squared-dropdown>
+  </div>
+</div>
+<div
+  class="collection-table-wrapper w-100 gap-4 rounded-3 py-1 px-0"
+  [ngClass]="layoutClass"
+>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+    [discount]="69"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+    [discount]="12"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+    [discount]="60"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+    [discount]="8"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+  <app-collection-table-cell
+    layoutStyle="layoutStyle"
+    vendor="Faisal Fabrics"
+    title="Baroque Super Fine Ejyptian Cotton Men's Kameez Shalwar - FF00154"
+    [price]="2390"
+  ></app-collection-table-cell>
+</div>
+<app-collection-table-pagination-bar></app-collection-table-pagination-bar>

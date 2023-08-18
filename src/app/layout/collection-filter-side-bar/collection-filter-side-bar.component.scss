@@ -1,0 +1,10 @@
+.c-wrapper {
+    position: sticky;
+    top: 55px;
+    overflow-y: auto;
+    max-height: calc(100vh - 55px);
+}
+
+.separator {
+    border-bottom: 0.5px solid #ffffff54 !important;
+}

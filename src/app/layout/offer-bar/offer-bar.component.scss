@@ -1,0 +1,38 @@
+.top_offer_bar_wrapper_outter {
+    max-height: 0;
+    transition: max-height 0.8s ease-in-out;
+}
+
+.top-offer-bar {
+    height: 35px;
+    transform: translateY(-35px);
+    color: white;
+    transition: transform 0.8s ease-in-out;
+    z-index: 11;
+
+    @media (max-width: 768px) {
+        height: 38px;
+    }
+
+    .item {
+        .icon {
+            font-size: 16px;
+        }
+    }
+}
+
+.close-btn {
+    right: 15px;
+    top: 0;
+
+    .close-btn-icon {
+        aspect-ratio: 1/1;
+        width: 15px;
+        transition: color 0.2s ease-in-out;
+        color: #0000006c;
+
+        &:hover {
+            color: #000000;
+        }
+    }
+}

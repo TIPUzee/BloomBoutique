@@ -1,0 +1,50 @@
+body {
+    font-family: Poppins, Arial, "sans-serif";
+    transition: background-color 0.3s ease-in-out;
+    // background: hsla(239, 33%, 33%, 1);
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    background-color: #31413a !important;
+
+    .root {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}
+
+* {
+    color: inherit;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-user-select: inherit;
+    user-select: inherit;
+}
+
+@media (max-width: 768px) {
+    * {
+        -webkit-transition: unset;
+        -moz-transition: unset;
+        -o-transition: unset;
+        -ms-transition: unset;
+        transition: unset;
+        transition-delay: 0;
+    }
+
+    *:hover {
+        box-shadow: unset !important;
+    }
+}
+
+:not(html, head, title, body, h1, h2, h3, h4, h5, h6, p, a, img, div, span, ul, ol, li, table, tr, td, th, form, input, button, textarea, select, option, label, iframe, audio, video, script, style, meta, header, nav, main, article, section, aside, footer, blockquote, cite, code, pre, abbr, hr, strong, em, sup, sub, del, ins, mark, time, datalist, details, summary, figure, figcaption, progress, meter, output, template, g, svg, path) {
+    display: contents;
+    fill: inherit;
+}
+
+svg,
+path {
+    fill: inherit;
+}

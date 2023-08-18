@@ -1,0 +1,17 @@
+.c-wrapper {
+    height: 57.6px;
+}
+
+.border-white {
+    --color: #ffffff9a;
+    border-color: var(--color) !important;
+    transition: border-color 0.3s linear, color 0.3s linear, background-color 0.3s linear;
+    color: var(--color);
+    background-color: #00000000;
+}
+
+.border-white:hover {
+    border-color: #fff !important;
+    color: #fff !important;
+    background-color: #0000009c;
+}

@@ -1,0 +1,27 @@
+.c-wrapper {
+    background-color: var(--slate-color);
+    transition: 0.7s ease-in-out;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    >.row {
+        height: 60px;
+    }
+
+    .logo {
+        transition: fill 0.7s ease-in-out;
+        fill: black;
+    }
+
+    &.dark {
+        background-color: black;
+        color: var(--slate-color);
+        fill: var(--slate-color);
+
+        .logo {
+            fill: var(--slate-color);
+        }
+    }
+}

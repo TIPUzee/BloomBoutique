@@ -1,0 +1,81 @@
+<div #top_offer_bar_wrapper_outter class="w-100 top_offer_bar_wrapper_outter">
+  <div
+    #top_offer_bar_wrapper
+    class="top-offer-bar bg-orange w-100 d-flex justify-content-center position-relative"
+  >
+    <div class="container-fluid px-4 h-100 row align-items-center">
+      <!-- contacts section -->
+      <div class="d-lg-flex d-none flex-row gap-3 col h-100">
+        <!-- contact 1 -->
+        <div class="item d-flex flex-row gap-1">
+          <fa-icon
+            [icon]="faWhatsapp"
+            class="fs-6 d-flex align-items-center"
+          ></fa-icon>
+          <fa-icon
+            [icon]="faPhone"
+            class="fs-7 d-flex align-items-center phone"
+          ></fa-icon>
+          <div
+            class="cell-number fs-7 d-flex align-items-center ms-1 fw-medium"
+          >
+            (+92) 333 314 22 22
+          </div>
+        </div>
+        <!-- contact 1 -->
+
+        <!-- contact 2 -->
+        <div class="item d-flex flex-row gap-1">
+          <fa-icon
+            [icon]="faEnvelope"
+            class="fs-6 d-flex align-items-center"
+          ></fa-icon>
+          <div
+            class="cell-number fs-7 d-flex align-items-center ms-1 fw-medium"
+          >
+            zshann992@gmail.com
+          </div>
+        </div>
+        <!-- contact 2 -->
+      </div>
+      <!-- contacts section -->
+
+      <!-- offer text section -->
+      <div
+        class="col text-dark fw-semibold h-100 d-grid justify-content-center align-items-center fs-lg-6 fs-7"
+      >
+        <div>✓ 100% ORIGINAL BRANDS ✓ <span>3</span> DAYS RETURN*</div>
+      </div>
+      <!-- offer text section -->
+
+      <!-- region section -->
+      <div
+        class="col d-lg-grid d-none justify-content-end align-items-center h-100"
+      >
+        <app-dropdown
+          label="Region"
+          [options]="[
+            ['PK', true],
+            ['IND', false],
+            ['US', false]
+          ]"
+          [attach_to_right]="true"
+          [default_option_index]="0"
+          [label_align_right]="true"
+        ></app-dropdown>
+      </div>
+      <!-- region section -->
+    </div>
+    <!-- close button section -->
+    <div
+      class="close-btn h-100 d-flex justify-content-center align-items-center position-absolute"
+    >
+      <fa-icon
+        [icon]="faTimes"
+        class="close-btn-icon fs-6 d-flex justify-content-center align-items-center cursor-pointer"
+        (click)="top_offer_bar_wrapper.classList.add('d-none')"
+      ></fa-icon>
+    </div>
+    <!-- close button section -->
+  </div>
+</div>

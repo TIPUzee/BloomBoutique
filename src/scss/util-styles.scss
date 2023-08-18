@@ -1,0 +1,162 @@
+:root {
+  --slate-color: #e7e7e7;
+  --c-bg-white: #ffffff;
+  --c-bg-dark: #26292a;
+}
+
+.bg-orange {
+  background-color: #ff9800;
+}
+
+.fs-7p5 {
+  font-size: 0.9rem;
+}
+
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+.fs-8 {
+  font-size: 0.7rem;
+}
+
+.h-0 {
+  height: 0 !important;
+}
+
+.h-min {
+  height: min-content !important;
+}
+
+@media (min-width: 768px) {
+  .fs-lg-6 {
+    font-size: 1rem !important;
+  }
+
+  .fs-lg-7 {
+    font-size: 0.8rem !important;
+  }
+
+  .fs-lg-8 {
+    font-size: 0.7rem !important;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.ratio-1x1 {
+  aspect-ratio: 1/1;
+}
+
+.ratio-3x4 {
+  aspect-ratio: 3/4;
+}
+
+fa-icon,
+svg {
+  aspect-ratio: inherit;
+}
+
+svg,
+path {
+  fill: inherit;
+}
+
+.c-sm-shadow {
+  box-shadow: -1px 3px 4px #0000006b;
+}
+
+.c-sm-shadow-hover {
+  transition: box-shadow 0.3s linear;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #00000000;
+}
+
+body.light .c-sm-shadow-hover:hover,
+body.light .c-sm-shadow-hover:focus {
+  box-shadow: 0 2px 4px #0000004f;
+}
+
+body.dark .c-sm-shadow-hover:hover,
+body.dark .c-sm-shadow-hover:focus {
+  box-shadow: 0 2px 4px #ffffff64;
+}
+
+.transition-color {
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.transition-fill {
+  -webkit-transition: fill 0.3s ease-in-out;
+  -moz-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  -ms-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+
+.transition-transform {
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.transition-shadow {
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.transition-bg {
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.transition-shadow.transition-color {
+  -webkit-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.w-max {
+  width: max-content;
+}
+
+.no-link-style {
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid-rows {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}

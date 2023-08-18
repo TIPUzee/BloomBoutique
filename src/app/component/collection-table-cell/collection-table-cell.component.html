@@ -1,0 +1,46 @@
+<div
+  class="c-wrapper c-base d-flex flex-column p-3 rounded-3 position-relative overflow-hidden"
+>
+  <div *ngIf="discount > 0" class="ribbon">
+    <div class="ribbon__content">
+      <span class="fw-bolder fs-5">{{ discount }}%</span> Off
+    </div>
+  </div>
+
+  <div
+    class="position-relative rounded-3 overflow-hidden ratio-3x4 imgs-wrapper"
+  >
+    <!-- <div class="img1 rounded">
+      <img src="/assets/img/img1.jpg" alt="" class="img" />
+    </div> 
+    <div class="img2 rounded">
+      <img src="/assets/img/img2.jpg" alt="" class="img" />
+    </div>
+    -->
+    <div class="img3">
+      <img src="/assets/img/img1.jpg" alt="" class="img" />
+    </div>
+  </div>
+  <div class="d-flex flex-column gap-1 px-0 mt-3 mb-2">
+    <div class="c-base-color txt-light fs-7">{{ vendor }}</div>
+    <div class="fw-light fs-6">
+      {{ title }}
+    </div>
+    <div class="fw-bold fs-7p5">
+      <span
+        [ngClass]="{
+          'text-danger text-decoration-line-through': discount != 0
+        }"
+      >
+        {{ price | currency : utilsService.getCurrencyCode() }}
+      </span>
+      <span *ngIf="discount > 0" class="ms-2">
+        {{
+          price
+            | discount : discount
+            | currency : utilsService.getCurrencyCode()
+        }}
+      </span>
+    </div>
+  </div>
+</div>

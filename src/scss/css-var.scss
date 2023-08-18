@@ -1,0 +1,73 @@
+:root {
+    --slate-color: hsl(0, 0%, 91%);
+}
+
+body.light {
+    --g-primary-bg: 255, 153, 0;
+    --g-primary-fg: 255, 153, 0;
+
+    --g-secondary-bg: 231, 231, 231;
+    --g-secondary-fg: 231, 231, 231;
+
+    --g-base-bg: 255, 255, 255;
+    --g-base-fg: 0, 0, 0;
+
+    --c-body-bg-color: var(--slate-color);
+    --c-top-nav-bar-bg-color: #ffffff;
+    --c-top-nav-bar-bg-color-opposite: #26292a;
+    --c-top-nav-bar-font-color: #000000c8;
+}
+
+body.dark {
+    --g-primary-bg: 255, 153, 0;
+    --g-primary-fg: 255, 153, 0;
+
+    --g-secondary-bg: 231, 231, 231;
+    --g-secondary-fg: 231, 231, 231;
+
+    --g-base-bg: 38, 41, 42;
+    --g-base-fg: 255, 255, 255;
+
+    --c-body-bg-color: #373737;
+    --c-top-nav-bar-bg-color: #26292a;
+    --c-top-nav-bar-bg-color-opposite: #ffffff;
+    --c-top-nav-bar-font-color: #ffffffd0;
+}
+
+.txt-hover {
+    --s-primary-fg: rgba(var(--g-primary-fg), 0.6);
+    --s-secondary-fg: rgba(var(--g-secondary-fg), 0.6);
+    --s-base-fg: rgba(var(--g-base-fg), 0.6);
+    cursor: pointer;
+}
+
+.txt-hover:hover,
+.txt-hover:focus,
+.txt-hover:focus-within,
+.txt-hover:active,
+.txt-hover:focus-visible,
+:not(.txt-hover) {
+    --s-primary-fg: rgba(var(--g-primary-fg), 1);
+    --s-secondary-fg: rgba(var(--g-secondary-fg), 1);
+    --s-base-fg: rgba(var(--g-base-fg), 1);
+    --s-base-bg: rgba(var(--g-base-bg), 1);
+}
+
+.txt-light {
+    --s-primary-fg: rgba(var(--g-primary-fg), 0.6);
+    --s-secondary-fg: rgba(var(--g-secondary-fg), 0.6);
+    --s-base-fg: rgba(var(--g-base-fg), 0.6);
+}
+
+.c-base-color {
+    color: var(--s-base-fg);
+}
+
+.c-base {
+    background-color: var(--s-base-bg);
+    color: var(--s-base-fg);
+}
+
+.c-base-border {
+    border: 0.5px solid rgba(var(--g-base-fg), 0.3);
+}

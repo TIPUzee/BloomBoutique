@@ -1,0 +1,47 @@
+.select-menu {
+    .select-btn {
+        transition: box-shadow 0.8s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 0.1px solid #ffffff3d;
+        }
+    }
+
+    .options {
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16), 0 0 0.5px rgba(0, 0, 0, 0.444);
+        border: 0.3px solid #ffffff00;
+
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+        pointer-events: none;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    &.active {
+        .select-btn {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            border: 0.1px solid #ffffff3d;
+        }
+
+        .options {
+            opacity: 1;
+            z-index: 10;
+            pointer-events: auto;
+            transform: translate3d(0, 0, 0);
+
+            .option {
+                transition: box-shadow 0.3s ease-in-out;
+
+                &:hover {
+                    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+}
+
+.start-time {
+    opacity: 0 !important;
+    transition: unset !important;
+}

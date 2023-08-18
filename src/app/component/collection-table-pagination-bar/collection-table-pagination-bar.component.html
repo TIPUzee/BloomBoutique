@@ -1,0 +1,44 @@
+<div class="c-wrapper w-100 c-base d-flex flex-row p-2 rounded-3">
+  <div class="left flex-grow-1 h-100"></div>
+  <div class="center d-flex flex-row gap-1 h-100">
+    <div
+      class="prev cursor-pointer h-100 d-flex align-items-center justify-content-center lh-1 px-3 border border-2 border-white rounded-2"
+    >
+      Previous
+    </div>
+    <div
+      class="num cursor-pointer h-100 d-flex align-items-center justify-content-center lh-1 px-3 rounded-2"
+      [ngClass]="{ 'border border-2 border-white on-hover': true }"
+    >
+      1
+    </div>
+    <div
+      class="num cursor-pointer h-100 d-flex align-items-center justify-content-center lh-1 px-3 rounded-2"
+      [ngClass]="{ 'border border-2 border-white': false }"
+      [ngClass]="{ 'bg-white text-dark fw-bold': true }"
+    >
+      2
+    </div>
+    <div
+      class="num cursor-pointer h-100 d-flex align-items-center justify-content-center lh-1 px-3 border border-2 border-white rounded-2"
+    >
+      3
+    </div>
+    <div
+      class="dots h-100 d-flex align-items-center justify-content-center lh-1 px-3 rounded-2 fs-3"
+    >
+      ...
+    </div>
+    <div
+      class="num cursor-pointer h-100 d-flex align-items-center justify-content-center lh-1 px-3 border border-2 border-white rounded-2"
+    >
+      20
+    </div>
+    <div
+      class="next cursor-pointer h-100 d-flex align-items-center justify-content-center lh-1 px-3 border border-2 border-white rounded-2"
+    >
+      Next
+    </div>
+  </div>
+  <div class="right flex-grow-1"></div>
+</div>

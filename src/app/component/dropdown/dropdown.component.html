@@ -1,0 +1,35 @@
+<!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+<div #drop_down_wrapper class="select-menu position-relative w-auto h-75">
+  <div
+    #toggler
+    class="select-btn px-2 d-flex font-weight-normal rounded align-items-center cursor-pointer justify-content-start user-select-none text-end"
+    (click)="
+      (drop_down_wrapper.classList.toggle('active') &&
+        select_menu_options_list.classList.remove('start-time')) ||
+        select_menu_options_list.classList.remove('start-time')
+    "
+    [class.justify-content-end]="label_align_right"
+  >
+    <span #selected_value class="sBtn-text">{{ label }}</span>
+  </div>
+
+  <ul
+    #select_menu_options_list
+    class="options start-time position-absolute mt-2 me-0 top-100 overflow-auto max-height-295 bg-white rounded px-1 py-2 d-flex flex-column gap-1 user-select-none"
+    [class.end-0]="attach_to_right"
+  >
+    <!-- items -->
+    <li
+      *ngFor="let option of options; let i = index"
+      class="option d-flex align-items-center justify-content-start h-55 cursor-pointer ps-2 pe-3 py-1 rounded text-dark"
+      [class.pe-none]="!option[1]"
+      [class.text-opacity-25]="!option[1]"
+    >
+      <span
+        class="option-text font-size-18"
+        (click)="select_option(option[0])"
+        >{{ option[0] }}</span
+      >
+    </li>
+  </ul>
+</div>
